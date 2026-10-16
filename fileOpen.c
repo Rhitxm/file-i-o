@@ -7,3 +7,19 @@ int main()
     fclose(fptr);
     return 0;
 }
+
+//to check whether file exists
+
+#include <stdio.h>
+int main()
+{
+    FILE *fptr;
+    fptr=fopen("sample1.txt", "r");
+    if(fptr==NUll){
+        printf("file doesn't exist");
+    }
+    else{
+    fclose(fptr);
+    }
+    return 0;
+}
